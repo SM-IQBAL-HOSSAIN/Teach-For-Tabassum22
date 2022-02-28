@@ -4,105 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teach For Tabassum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Teach for Tabassum</title>
 </head>
 
+
 <style>
-    *{
-        margin: 0;
+    u{
+    align-items: center;
     }
-
-.nav{
-    box-sizing: border-box;
-    height: 40px;
-    width: 100%;
-    padding-top: 5px;
-    text-align: center;
-    border: 3px solid grey; 
-    background-color: rgb(127, 62, 192);
-    color: white;
-    font-size: 1.6rem;
-            
-}
-
-.container{
-    font-size:5px;
-    
-}
-
-.myButton{
-    box-sizing: border-box;
-    background-color:cadetblue;
-    margin: 0 auto;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    margin: 0;
-    color: white;
-    font-size: 2rem;
-    margin-top: 10px;
-   
-}
-
-button {
-            background-image: url("tabassum.jpg");
-            background-size: cover;
-            width: 150px;
-            height: 150px;
-            font-size: 2rem
-        
-        }
-
-
-        button:hover{
-            transform: scale(1.2);
-        }
-    
-.img{
-float:left;
-border-radius: 50%;
-border: 2px solid;
-overflow: hidden;
-margin-top: -40px;
-text-align: left;
-transition: 4s;
-}
-
-
-img:hover{
-  
-    transform: scale(2.5);
-    transform:translate(300px,0px); 
-
-}
-
-   
-#creater{
-  background-color: purple;
-  color: white;
-  padding: 10px;
-  width: 250px;
-  height: 45px;
-  margin-left: 10px;
-  line-height: 25px;
-  text-align: center;
-}
- 
-    
-    
 </style>
 
 <body>
     
+  
     
-<div class="nav">
-<p>Teach for Tabassum</p>
-<img class="img" src="tabassum.jpg" alt="" width="40x" height="40px">
+    
+    
+    
+    <!-- <i class="fas fa-bars fa-4x" id="menu-icon"></i> -->
+<nav class="nav">
+  
+
+    <p>Teach for Tabassum</p>
+    
+    <img class="logo" src="tabassum.jpg" alt="" width="40x" height="40px">
+    
+         <!-- <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tutorial</a></li>
+   
+    </ul> -->
 </div>
+</nav>
 
 
-
-
+ 
 <div class="container">
     <button class="myButton btn ">AA</button>    
     <button class="myButton">A</button>
@@ -131,20 +72,143 @@ img:hover{
     <button class="myButton">X</button>
     <button class="myButton">Y</button>
     <button class="myButton">Z</button>
-        
 
+ 
+    <!-- <button type="submit">
+        Test button
+    </button> -->
+  
+
+    
 </div>
+
+
+<body>
+    <div class="head">আমার বাবু শোনা</div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1.jpg" width="300px" height="300px">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2.jpg" width="300px" height="300px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3.jpg" width="300px" height="300px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4.jpg" width="300px" height="300px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+
+
+
+    <!-- <a class="previous" onclick="plusSlides(-1)">&#10094;</a> -->
+
+    <button class="btn3" onclick ="plusSlides(-1)">Previous</button>
+
+    <button class="btn4" onclick ="plusSlides(1)">Next</button>
+  
+   
+    <!-- <a class="Next" onclick="plusSlides(1)">&#10095;</a> -->
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+<br>
+
+ 
+
+    <div id="creater">
+      <p>Create by: SM. Iqbal Hossain</p>
+    <p>Software Programmer</p>
+    <p>cell : 01646364414</p>
+    </div>
+    
+
+
+
+</body>
+
+<script>var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+  
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+  } </script>
+
+
+
 
 
 <script src="index.js"></script>
 
+
+   
+
+
+
 </body>
-    <footer>
+
+
+
+
+<footer>
 <div id="creater">
-    <div class="creater1">Create By : SM Iqbal Hossain</div> 
- <p> programmer and web developer</p>
+    <div class="creater1">Crete By : SM Iqbal Hossain</div> 
+ 
 <p>Contrct No. 01646364414</p>
 
 </div>
+
+
+
+
+<footer>
+
+
+
+   
 </footer>
+
+
 </html>
